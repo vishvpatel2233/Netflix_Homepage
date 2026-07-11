@@ -1,0 +1,458 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+}
+.box{
+    position:relative;
+    background-size: cover;
+    width: 100%;
+    height: 645px;
+    background-image: url("botnetimgs/botnetbgimg.jpg");
+    display: flex;
+    justify-content: center;
+}
+.box .flex{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to top, rgba(0,0,0,0.6), transparent 80%),
+        linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 80%),
+        linear-gradient(to left, rgba(0,0,0,0.8), transparent 60%),
+        linear-gradient(to right, rgba(0,0,0,0.8), transparent 60%);
+}
+nav{
+    position: absolute;
+    padding-bottom: 10px;
+    margin-top:18px;
+    width: 77%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo1{
+    margin-top: 20px;
+}
+.logobot{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+}
+.selector{
+    width:115px;
+    height: 30px;
+    margin-right: 10px ;
+    background-color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    border-color: rgb(74, 74, 74);
+    border-radius: 4px;
+    border-style: solid;
+    color:white;
+    padding-bottom:3px;
+    transition: 0.2s ease;
+    font-weight: 500;
+    font-size: 17px;
+}
+.selector:hover{
+    border-color: rgb(172, 172, 172);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.buttons{
+    padding-bottom: 0.4rem;
+    padding-right: 1.7rem;
+    z-index: 30;
+}
+.en{
+    background-color: #fff;
+    color:black;
+}
+.hi{
+    background-color: #fff;
+    color:black;
+}
+.es{
+    background-color: #fff;
+    color:black;
+}
+.button{
+    width: 80px;
+    height: 29px;
+    background-color: rgb(229, 9, 20);
+    color:white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+.button:hover{
+    background-color: rgb(199, 1, 1);
+}
+.fr{
+    background-color: #fff;
+    color:black;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    color: #ffffff;
+    z-index: 30;
+    font-size: 3.5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    padding-top: 160px;
+    text-align: center;
+}
+.amount{
+    color: #ffffff;
+    z-index: 30;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.extra{
+    color: #ffffff;
+    z-index: 30;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        color: #ffffff;
+    z-index: 30;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.input{
+    display:flex;
+    margin-top: 20px;
+}
+.textbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    background-color: rgba(0, 0, 0, 0.7);
+    width:380px;
+    font-size:15px;
+    padding-top:10px;
+    text-indent: 15px;
+    height: 45px;
+    margin-right: 10px ;
+    cursor: text;
+    border-color: rgb(80, 80, 80);
+    border-radius: 4px;
+    border-style: solid;
+    color:rgb(255, 255, 255);
+    border-width: 0.5px;
+    transition: 0.5s ease;
+    position:relative;
+}
+.email:active{
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
+}
+.email:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.text{
+    font-size:17px;
+    padding-top:15px;
+    padding-left: 15px;
+    font-weight: 400;
+    color:rgb(186, 186, 186);
+    position:absolute;
+    transition:0.3s ease;
+    z-index: 2;
+    cursor:text;
+}
+.email:focus + .text,
+.email:valid + .text {
+    font-size:12px;
+    color:rgb(220, 220, 220);
+    padding-top:5.5px;
+    z-index: 2;
+}
+.getstarted{
+    width: 205px;
+    height: 55px;
+    background-color: rgb(229, 9, 20);
+    color:white;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.getstarted:hover{
+    background-color: rgb(199, 1, 1);
+}
+.design{
+        position: absolute;
+    width: 100%;
+    height: 41px;
+    border-color: rgb(190, 1, 1);
+    border-width: 4px 0 0 0;
+    z-index: 3;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    border: 1rem transparent;
+    align-self: end;
+    background: radial-gradient(80% 500% at 50% -400%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+.designbg{
+    position: absolute;
+    width:100%;
+    height: 45px;
+    border-color: rgb(190, 1, 1);
+    position:absolute;
+    border:solid 2rem transparent;
+    align-self: end;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 10%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 90%);
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    border-bottom: none;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    box-sizing: border-box;
+}
+.bg{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 440px;
+    background-color: black;
+}
+.trending{
+    display:flex;
+    padding-top: 7px;
+    width:75%;
+    flex-direction: column;
+    background-color: black;
+    
+}
+.trending .heading{
+    color: #ffffff;
+    display:flex;
+    height:45px;
+    z-index: 3;
+    font-size: 1.5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    padding-top: 0px;
+    align-items: left;
+}
+.movies{
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-width: none;
+    width:100%;
+    height:320px;
+    display:flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:20px;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+.movies::-webkit-scrollbar {
+    height: 8px; /* horizontal scrollbar */
+}
+
+.movies::-webkit-scrollbar-track {
+    background: rgba(56, 41, 101, 0.3);
+    border-radius: 10px;
+    border-color:rgb(43, 0, 83);
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+.movies::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to right,
+        rgb(0, 10, 123),
+        rgb(79, 1, 158)
+    );
+    border-radius: 10px;
+    border-color:rgb(43, 0, 83);
+    border-width: 0.5px;
+    border-style: solid;
+    transition: 0.3s;
+}
+.card{
+    width:210px;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    flex-shrink: 0;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.movie{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.cards{
+    width:90%;
+    height:100%;
+    border-radius: 10px;
+    transform: translateX(0.65rem);
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+.cards:hover{
+    width:95%;
+    height:105%;
+}
+.number{
+    position:relative;
+    color: rgb(0, 0, 0);
+    bottom:150px;
+    right:22.5px;
+    text-shadow: 
+        -1.5px -1.5px 0 white,
+         1.5px -1.5px 0 white,
+        -1.5px  1.5px 0 white,
+         1.5px  1.5px 0 white;
+    font-size: 6.5rem;
+    font-weight: 700;
+}
+
+.bg1{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 440px;
+    background-color: black;
+}
+.bg1 .trending{
+    display:flex;
+    padding-top: 7px;
+    width:80%;
+    flex-direction: column;
+    background-color: black;
+    
+}
+.bg1 .trending .heading{
+    color: #ffffff;
+    display:flex;
+    height:45px;
+    z-index: 3;
+    font-size: 1.5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    padding-top: 0px;
+    align-items: left;
+}
+.bg1 .movies{
+    background-color: rgb(0, 0, 0);
+    border-width: none;
+    width:100%;
+    height:370px;
+    display:flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:20px;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+.bg1 .card{
+    width:225px;
+    height:100%;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    flex-shrink: 0;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    border-radius:10px;
+    
+}
+.bg1 .movie{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.bg1 .cards{
+    width:90%;
+    height:50%;
+    border-radius: 10px;
+    transform: translateX(0.65rem);
+    transition: 0.3s ease;
+    cursor:text;
+    color:white;
+    padding-top:24px;
+}
+.bg1 .movies::-webkit-scrollbar {
+    display:none;
+}
+
+.bg1 .movies::-webkit-scrollbar-track {
+    display:none;
+}
+
+.bg1 .movies::-webkit-scrollbar-thumb {
+    display:none;
+}
+.h{
+    font-size:25px;
+}
+.bg1 .p{
+    width:100%;
+    height:50%;
+    border-radius: 10px;
+    transform: translateX(0.65rem);
+    transition: 0.3s ease;
+    cursor:text;
+    color:rgb(179, 179, 179);
+    padding-top:24px;
+    font-size:16px;
+    font-weight:500;
+}
+.bg1 .para{
+    display:fit-content;
+    width:90%;
+}
+.bg1 .logos{
+    height:100%;
+    width:95%;
+    display:flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom:15px;
+}
+
